@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('kanye-quotes',[\App\Http\Controllers\API\QuoteController::class,'index']);
+Route::apiResource('users',\App\Http\Controllers\API\UserController::class);

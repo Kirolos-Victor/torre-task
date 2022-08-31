@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[\App\Http\Controllers\MainController::class,'index']);
+Route::get('/users',[\App\Http\Controllers\UserController::class,'index']);
+Route::get('/users/create',[\App\Http\Controllers\UserController::class,'create']);
